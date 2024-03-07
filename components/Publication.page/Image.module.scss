@@ -1,0 +1,27 @@
+@use "styles/abstracts" as *;
+
+$border-width: 10px;
+$min-height: 597px;
+
+.image {
+  border: $border-width solid $custom-white;
+  background-color: $custom-white;
+  min-height: $min-height;
+
+  @media only screen and (max-width: 480px) {
+    border: none;
+    min-height: 100vw;
+  }
+
+  @media only screen and (min-width: $big-screens-min-width) {
+    border-width: convert-px-to-vw($border-width);
+    min-height: convert-px-to-vw($min-height);
+  }
+}
+.image-content {
+  opacity: 0;
+  transition: opacity 300ms;
+  &-loaded {
+    opacity: 1;
+  }
+}

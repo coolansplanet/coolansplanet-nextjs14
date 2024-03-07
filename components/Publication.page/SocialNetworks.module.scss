@@ -1,0 +1,32 @@
+@use "styles/abstracts" as *;
+
+$icon-size: 30px;
+
+.social-networks {
+  font-size: $icon-size;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 0.6em;
+
+  @media only screen and (min-width: $big-screens-min-width) {
+    font-size: convert-px-to-vw($icon-size);
+  }
+
+  @media only screen and (max-width: $collapsed-menu-max-width) {
+    justify-content: center;
+  }
+}
+
+.link {
+  color: $custom-white;
+  font-size: $icon-size;
+  transition: transform 300ms, filter 300ms;
+  &:hover {
+    filter: drop-shadow(0 0 0.5em $shine-color);
+    transform: rotate(360deg);
+  }
+  @media only screen and (min-width: $big-screens-min-width) {
+    font-size: convert-px-to-vw($icon-size);
+  }
+}

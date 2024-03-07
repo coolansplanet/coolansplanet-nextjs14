@@ -1,0 +1,69 @@
+@use "styles/abstracts" as *;
+
+.burger-menu {
+  user-select: none;
+}
+
+.burger-button {
+  border: none;
+  background-color: transparent;
+  color: $custom-white;
+  font-size: 30px;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(0 0 15px $shine-color);
+  }
+  @media only screen and (max-width: 560px) {
+    font-size: 7vw;
+  }
+}
+
+.menu-items {
+  display: grid;
+  grid-auto-flow: row;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  min-width: 200px;
+  text-align: center;
+  background-color: $background;
+  padding: 0.5em;
+  border: 1px solid rgba($custom-white, 0.4);
+  border-radius: 5px 0 0 5px;
+  @media only screen and (max-width: 560px) {
+    top: 17vw;
+  }
+}
+
+.social-network-links {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: center;
+}
+
+.link {
+  color: $custom-white;
+  text-decoration: none;
+  line-height: 2em;
+}
+
+.link-navigation {
+  font-weight: 700;
+  &:hover {
+    text-shadow: 0 0 20px $custom-white;
+  }
+}
+
+.social-network {
+  font-size: 20px;
+  padding: 0 0.5em 0 0.5em;
+  &:hover {
+    filter: drop-shadow(0 0 15px $shine-color);
+  }
+}
+.active {
+  background-color: $custom-white;
+  color: $background;
+}

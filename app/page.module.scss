@@ -1,0 +1,40 @@
+@use "@/styles/abstracts" as *;
+
+$homepage-gap-in-vw: convert-px-to-vw($homepage-gap);
+
+.homepage {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: auto 1fr;
+  gap: $homepage-gap;
+  padding: 0 $homepage-gap 0 $homepage-gap;
+
+  @media only screen and (min-width: $big-screens-min-width) {
+    gap: $homepage-gap-in-vw;
+    padding: 0 $homepage-gap-in-vw 0 $homepage-gap-in-vw;
+  }
+}
+
+.publications {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: $homepage-gap;
+
+  @media only screen and (max-width: 1300px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media only screen and (max-width: 930px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (max-width: $mobile-max-width) {
+    grid-template-columns: 1fr;
+  }
+
+  @media only screen and (min-width: $big-screens-min-width) {
+    grid-template-columns: repeat(5, 1fr);
+    gap: $homepage-gap-in-vw;
+  }
+}

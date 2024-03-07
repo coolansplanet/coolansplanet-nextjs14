@@ -1,0 +1,32 @@
+@use "styles/abstracts" as *;
+
+.item {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  outline: 0 solid transparent;
+  transition: outline 300ms;
+  background-color: rgba(white, 0.1);
+
+  &:hover {
+    /*outline: $homepage-gap/2 solid white;
+    z-index: 27;*/
+  }
+
+  @media only screen and (max-width: $mobile-max-width) {
+    /* scroll-snap-align: end;
+    scroll-margin-bottom: $homepage-gap;*/
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.image-loaded {
+  opacity: 1;
+}

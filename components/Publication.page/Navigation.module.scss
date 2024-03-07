@@ -1,0 +1,79 @@
+@use "styles/abstracts" as *;
+
+$button-icon-size: 20px;
+$space-between-buttons: 6px;
+
+.navigation {
+  font-size: $publication-item-font-size;
+  color: $custom-white;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: $space-between-buttons;
+}
+
+.text {
+  display: inline-block;
+  min-width: 5em;
+  color: $custom-white;
+  text-align: center;
+  padding: 0.1em 0.3em 0 0.3em;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.button {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  border-radius: 0.2em;
+  border: none;
+  outline: none;
+  user-select: none;
+  font-size: $button-icon-size;
+  background-color: $custom-white;
+  color: $background;
+  cursor: pointer;
+  transition: transform 200ms;
+
+  &:hover {
+    box-shadow: 0 0 0.5em $shine-color;
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (min-width: $big-screens-min-width) {
+  .navigation {
+    font-size: convert-px-to-vw($publication-item-font-size);
+    gap: convert-px-to-vw($space-between-buttons);
+  }
+
+  .button {
+    font-size: convert-px-to-vw($button-icon-size);
+  }
+}
+
+@media only screen and (max-width: $collapsed-menu-max-width) {
+  .navigation {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navigation {
+    grid-template-columns: auto auto 1fr auto auto;
+    width: 100%;
+    gap: 2vw;
+  }
+  .text {
+    font-size: 5vw;
+    line-height: 2.1em;
+    width: 100%;
+  }
+
+  .button {
+    font-size: 7vw;
+  }
+}

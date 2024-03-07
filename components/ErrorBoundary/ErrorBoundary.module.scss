@@ -1,0 +1,20 @@
+.error-boundary {
+  display: grid;
+  justify-content: center;
+  background-color: red;
+}
+.title {
+  color: white;
+  line-height: 2em;
+  padding: 0 2em 0 2em;
+  font-size: 50px;
+  text-align: center;
+  display: inline-block;
+}
+.details {
+  color: white;
+  line-height: 2em;
+  font-size: 14px;
+  display: inline-block;
+  padding: 20px;
+}

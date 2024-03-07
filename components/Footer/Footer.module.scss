@@ -1,0 +1,19 @@
+@use "styles/abstracts" as *;
+
+$height: 100px;
+$font-size: 16px;
+
+.footer {
+  font-family: var(--font-silkscreen), sans-serif;
+  text-align: center;
+  font-size: 16px;
+  padding: 1em;
+  height: $height;
+  display: grid;
+  align-content: center;
+
+  @media only screen and (min-width: $big-screens-min-width) {
+    height: convert-px-to-vw($height);
+    font-size: convert-px-to-vw($font-size);
+  }
+}

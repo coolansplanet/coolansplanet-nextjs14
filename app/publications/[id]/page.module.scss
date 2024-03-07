@@ -1,0 +1,9 @@
+@use "styles/abstracts" as *;
+
+.loading-text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  opacity: 0.4;
+  margin-top: 1em;
+}

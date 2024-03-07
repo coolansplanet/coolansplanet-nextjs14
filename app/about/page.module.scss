@@ -1,0 +1,70 @@
+@use "styles/abstracts" as *;
+
+$column-width: 400px;
+$gap: 40px;
+$title-font-size: 50px;
+$title-padding: 0;
+$text-font-size: 16px;
+$margin-bottom: 80px;
+
+.about {
+  display: grid;
+  grid-template-columns: $column-width $column-width;
+  position: relative;
+  align-content: start;
+  margin-bottom: $margin-bottom;
+
+  justify-content: center;
+  gap: $gap;
+
+  @media only screen and (max-width: $collapsed-menu-max-width) {
+    grid-template-columns: 1fr;
+    margin: 0 24px 0 24px;
+  }
+
+  @media only screen and (min-width: $big-screens-min-width) {
+    grid-template-columns: convert-px-to-vw($column-width) convert-px-to-vw(
+        $column-width
+      );
+    gap: convert-px-to-vw($gap);
+    margin-bottom: convert-px-to-vw($margin-bottom);
+  }
+}
+
+.title {
+  font-family: var(--font-anton), sans-serif;
+  font-size: $title-font-size;
+  font-weight: 400;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  line-height: 1.5em;
+  margin-top: 0.8em;
+  padding: $title-padding;
+  color: $custom-white;
+
+  @media only screen and (max-width: $collapsed-menu-max-width) {
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 590px) {
+    font-size: 7.5vw;
+    text-align: left;
+  }
+
+  @media only screen and (min-width: $big-screens-min-width) {
+    font-size: convert-px-to-vw($title-font-size);
+    padding: convert-px-to-vw($title-padding);
+  }
+}
+
+.text {
+  line-height: 1.7em;
+  font-size: $text-font-size;
+  p + p {
+    margin-top: 1.7em;
+  }
+
+  @media only screen and (min-width: $big-screens-min-width) {
+    font-size: convert-px-to-vw($text-font-size);
+  }
+}

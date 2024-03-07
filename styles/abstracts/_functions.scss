@@ -1,0 +1,9 @@
+@use "sass:math";
+
+@function strip-units($number) {
+  @return math.div($number, ($number * 0 + 1));
+}
+
+@function convert-px-to-vw($number) {
+  @return strip-units($number) * math.div(100vw, 1920);
+}

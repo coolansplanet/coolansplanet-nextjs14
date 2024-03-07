@@ -1,0 +1,17 @@
+@use "styles/abstracts" as *;
+
+.app {
+  min-height: 100vh;
+  padding-top: $header-height;
+  display: grid;
+  //gap: 20px;
+  grid-template-rows: 1fr auto;
+
+  @media only screen and (max-width: 560px) {
+    padding-top: 18vw;
+  }
+
+  @media only screen and (min-width: $big-screens-min-width) {
+    padding-top: convert-px-to-vw($header-height);
+  }
+}

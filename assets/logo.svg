@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns="http://www.w3.org/2000/svg"
+  id="svg8"
+  version="1.1"
+  viewBox="0 0 150 10"
+  height="10"
+  width="150"
+>
+  <defs id="defs2" />
+  <metadata id="metadata5">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+    d="m 3,1  5,0 0,1 1,0 0,2 -2,0 0,-1 -3,0 0,4 3,0 0,-1 2,0 0,2 -1,0 0,1 -5,0 0,-1 -1,0 0,-6 1,0 z"
+    fill="white"
+    id="c-letter"
+  />
+
+  <path
+    d="m 11,1 5,0 0,1 1,0 0,6 -1,0 0,1 -5,0 0,-1 -1,0 0,-6 1,0 z m 1,2 0,4 3,0 0,-4 z"
+    fill="white"
+    id="o-letter"
+  />
+
+  <path
+    d="m 19,1 5,0 0,1 1,0 0,6 -1,0 0,1 -5,0 0,-1 -1,0 0,-6 1,0 z m 1,2 0,4 3,0 0,-4 z"
+    fill="white"
+    id="o-letter-2"
+  />
+
+  <path d="m 26,1 2,0 0,6 4,0 0,2 -6,0 z" fill="white" id="l-letter" />
+
+  <path
+    d="m 34,1 5,0 0,1 1,0 0,7 -2,0 0,-2 -3,0 0,2 -2,0  0,-7 1,0 z m 1,2 0,2 3,0 0,-2  z"
+    fill="white"
+    id="a-letter"
+  />
+
+  <path
+    d="m 41,1 2,0 0,1 1,0 0,1 1,0 0,1 1,0 0,-3 2,0 0,8 -2,0 0,-1 -1,0 0,-1 -1,0 0,-1 -1,0 0,3 -2,0 z"
+    fill="white"
+    id="n-letter"
+  />
+
+  <path
+    d="m 49,1 6,0 0,2 -4,0 0,1 4,0 0,5 -6,0 0,-2 4,0 0,-1 -4,0 z"
+    fill="white"
+    id="s-letter"
+  />
+
+  <path
+    d="m 61,1 7,0 0,6 -5,0 0,2 -2,0     z m 2,2 0,2 3,0 0,-2  z"
+    fill="white"
+    id="p-letter"
+  />
+
+  <path d="m 69,1 2,0 0,6 4,0 0,2 -6,0 z" fill="white" id="l-letter-2" />
+
+  <path
+    d="m 77,1 5,0 0,1 1,0 0,7 -2,0 0,-2 -3,0 0,2 -2,0  0,-7 1,0 z m 1,2 0,2 3,0 0,-2  z"
+    fill="white"
+    id="a-letter-2"
+  />
+
+  <path
+    d="m 84,1 2,0 0,1 1,0 0,1 1,0 0,1 1,0 0,-3 2,0 0,8 -2,0 0,-1 -1,0 0,-1 -1,0 0,-1 -1,0 0,3 -2,0 z"
+    fill="white"
+    id="n-letter-2"
+  />
+
+  <path
+    d="m 92,1 7,0 0,2 -5,0 0,1 3,0 0,2 -3,0 0,1 5,0 0,2 -7,0 z"
+    fill="white"
+    id="e-letter"
+  />
+
+  <path
+    d="m 100,1 8,0 0,2 -3,0 0,6 -2,0 0,-6 -3,0 z"
+    fill="white"
+    id="t-letter"
+  />
+
+  <rect x="21" y="5" height="1" width="1" fill="white" />
+
+  <rect x="29" y="1" height="1" width="1" fill="white" />
+
+  <rect x="31" y="3" height="1" width="1" fill="white" />
+
+  <rect x="29" y="5" height="1" width="1" fill="white" />
+
+  <rect x="56" y="1" height="1" width="1" fill="white" />
+
+  <rect x="59" y="3" height="1" width="1" fill="white" />
+
+  <rect x="58" y="8" height="1" width="1" fill="white" />
+
+  <rect x="65" y="8" height="1" width="1" fill="white" />
+
+  <rect x="72" y="2" height="1" width="1" fill="white" />
+
+  <rect x="74" y="3" height="1" width="1" fill="white" />
+
+  <rect x="73" y="5" height="1" width="1" fill="white" />
+
+  <rect x="101" y="6" height="1" width="1" fill="white" />
+
+  <rect x="111" y="1" height="1" width="1" fill="white" />
+
+  <rect x="114" y="1" height="1" width="1" fill="white" />
+
+  <rect x="125" y="1" height="1" width="1" fill="white" />
+
+  <rect x="122" y="2" height="1" width="1" fill="white" />
+
+  <rect x="113" y="3" height="1" width="1" fill="white" />
+
+  <rect x="134" y="4" height="1" width="1" fill="white" />
+
+  <rect x="109" y="5" height="1" width="1" fill="white" />
+
+  <rect x="115" y="5" height="1" width="1" fill="white" />
+
+  <rect x="121" y="6" height="1" width="1" fill="white" />
+
+  <rect x="124" y="6" height="1" width="1" fill="white" />
+
+  <rect x="122" y="7" height="1" width="1" fill="white" />
+
+  <rect x="129" y="7" height="1" width="1" fill="white" />
+
+  <rect x="120" y="8" height="1" width="1" fill="white" />
+
+  <rect x="126" y="8" height="1" width="1" fill="white" />
+
+  <rect x="136" y="8" height="1" width="1" fill="white" />
+
+  <path
+    d="m 57,4 1,0 0,1 1,0 0,1 -1,0 0,1 -1,0 0,-1 -1,0 0,-1 1,0 z"
+    fill="white"
+    id="star"
+  />
+
+  <path
+    d="m 118,1 1,0 0,1 1,0 0,1 -1,0 0,1 -1,0 0,-1 -1,0 0,-1 1,0 z"
+    fill="white"
+    id="star-2"
+  />
+
+  <path
+    d="m 128,3 1,0 0,1 1,0 0,1 -1,0 0,1 -1,0 0,-1 -1,0 0,-1 1,0 z"
+    fill="white"
+    id="star-3"
+  />
+
+  <path
+    d="m 113,6 1,0 0,1 1,0 0,1 -1,0 0,1 -1,0 0,-1 -1,0 0,-1 1,0 z"
+    fill="white"
+    id="star-4"
+  />
+</svg>

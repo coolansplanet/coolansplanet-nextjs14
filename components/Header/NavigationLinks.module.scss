@@ -1,0 +1,72 @@
+@use "styles/abstracts" as *;
+
+$font-size: 20px;
+$padding: 12px;
+$line-height: 32px;
+$underline-thickness: 3px;
+$gap: 8px;
+
+.navigation-links {
+  font-family: var(--font-silkscreen), sans-serif;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: $gap;
+
+  @media only screen and (max-width: $collapsed-menu-max-width) {
+    display: none;
+  }
+}
+
+.link {
+  color: $custom-white;
+  font-size: $font-size;
+  font-weight: 400;
+  padding: 0 $padding 0 $padding;
+  text-decoration: none;
+  user-select: none;
+  position: relative;
+  line-height: $line-height;
+  font-weight: 700;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: $underline-thickness;
+    bottom: 0;
+    left: 0;
+    background-color: $custom-white;
+    transition: width 200ms;
+  }
+  &.active {
+    background-color: $custom-white;
+    color: $background;
+  }
+  &:hover:not(.active),
+  &.loading:not(.active) {
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: $big-screens-min-width) {
+  .navigation-links {
+    gap: convert-px-to-vw($gap);
+  }
+
+  .link {
+    $padding-in-vw: convert-px-to-vw($padding);
+    font-size: convert-px-to-vw($font-size);
+    padding: 0 $padding-in-vw 0 $padding-in-vw;
+    line-height: convert-px-to-vw($line-height);
+
+    &:before {
+      height: convert-px-to-vw($underline-thickness);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use "@/styles/abstracts" as *;
+
+.cover {
+  width: 100%;
+  background-color: rgba(white, 0.1);
+  min-height: 14vw;
+
+  @media only screen and (max-width: $mobile-max-width) {
+    min-height: auto;
+  }
+}
+
+.coverImage {
+  opacity: 0;
+  width: 100%;
+  transition: opacity 300ms;
+
+  //height: 100%;
+}
+
+.coverImageLoaded {
+  opacity: 1;
+}

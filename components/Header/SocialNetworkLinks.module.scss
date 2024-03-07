@@ -1,0 +1,60 @@
+@use "styles/abstracts" as *;
+@use "sass:math";
+
+$icon-size: 20px;
+$shine-size: 10px;
+$padding: math.div($icon-size, 2);
+$margin-right: math.div(-$icon-size, 2);
+
+.social-network-links {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-self: end;
+}
+
+.link {
+  padding: $padding;
+  font-size: $icon-size;
+  color: white; //$custom-white;
+  display: grid;
+  align-content: center;
+  transition: transform 300ms, filter 300ms;
+
+  &:last-of-type {
+    margin-right: $margin-right;
+  }
+  &:hover {
+    filter: drop-shadow(0 0 $shine-size $shine-color);
+    transform: rotate(360deg);
+  }
+
+  @media only screen and (max-width: 1440px) and (min-width: $collapsed-menu-max-width) {
+    padding: 0.7vw;
+  }
+
+  @media only screen and (max-width: $collapsed-menu-max-width) {
+    display: none;
+  }
+
+  @media only screen and (min-width: $big-screens-min-width) {
+    $icon-size-in-vw: convert-px-to-vw($icon-size);
+    padding: convert-px-to-vw($padding);
+    font-size: $icon-size-in-vw;
+
+    &:last-of-type {
+      margin-right: convert-px-to-vw($margin-right);
+    }
+    &:hover {
+      filter: drop-shadow(0 0 convert-px-to-vw($shine-size) $shine-color);
+    }
+  }
+}
+
+.burger-menu {
+  display: none;
+
+  @media only screen and (max-width: $collapsed-menu-max-width) {
+    display: grid;
+  }
+}

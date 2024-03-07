@@ -1,0 +1,32 @@
+@use "styles/abstracts" as *;
+
+.back-button {
+  $this: &;
+  color: $background;
+  background-color: $custom-white;
+  font-size: $publication-item-font-size;
+  text-decoration: none;
+  padding: 0.5em 1em 0.5em 1em;
+  display: inline-block;
+  transition: transform 200ms;
+  &:hover {
+    box-shadow: 0 0 10px $shine-color;
+    transform: scale(1.02);
+    .icon {
+      transform: rotate(-360deg);
+    }
+  }
+
+  @media only screen and (min-width: $big-screens-min-width) {
+    font-size: convert-px-to-vw($publication-item-font-size);
+  }
+}
+
+.text {
+  margin-right: 1em;
+  font-weight: 700;
+}
+
+.icon {
+  transition: transform 300ms;
+}

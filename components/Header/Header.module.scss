@@ -1,0 +1,40 @@
+@use "styles/abstracts" as *;
+
+$padding: 20px;
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: $padding;
+  height: $header-height;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  background-color: $background;
+  align-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $collapsed-menu-max-width) {
+    grid-template-columns: 1fr auto;
+  }
+  @media only screen and (max-width: 560px) {
+    height: 18vw;
+  }
+  @media only screen and (min-width: $big-screens-min-width) {
+    padding: convert-px-to-vw($padding);
+    height: convert-px-to-vw($header-height);
+  }
+}
+
+.logo {
+  $max-width: 460px;
+  width: 100%;
+  max-width: $max-width;
+  height: auto;
+  image-rendering: pixelated;
+  //filter: drop-shadow(0 0 11px $shine-color);
+  @media only screen and (min-width: $big-screens-min-width) {
+    max-width: convert-px-to-vw($max-width);
+  }
+}
